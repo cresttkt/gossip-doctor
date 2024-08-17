@@ -1,9 +1,10 @@
-import styles from "./top.module.scss";
+import Header from "@/components/layouts/header/header";
+// import styles from "./top.module.scss";
 
 export default function Home() {
   return (
     <main>
-      <h1 className={styles.title}>Gossip Doctor</h1>
+      <Header />
     </main>
   );
 }

@@ -1,0 +1,7 @@
+@use 'variable' as var;
+
+@mixin pc {
+    @media screen and (min-width: var.$pc) {
+        @content;
+    }
+}
