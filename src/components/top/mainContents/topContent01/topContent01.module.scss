@@ -1,0 +1,30 @@
+@use '/src/styles/utils/mixin' as mix;
+@use '/src/styles/utils/variable' as var;
+
+.content {
+    padding: 20px 15px 0;
+    text-align: center;
+
+    .content_catch {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .content_catchFirst {
+        display: block;
+        font-size: 16px;
+        text-decoration: underline wavy var.$black;
+    }
+
+    .content_catch_main {
+        display: block;
+        margin-top: 10px;
+        color: var.$main-orange;
+    }
+
+    .content_text {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
