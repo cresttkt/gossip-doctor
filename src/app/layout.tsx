@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import { Zen_Antique_Soft } from "next/font/google";
+
+const mainFontBold = Zen_Antique_Soft({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gossip Doctor",
@@ -13,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body className={mainFontBold.className}>{children}</body>
     </html>
   );
 }

@@ -13,7 +13,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.header_wrapper}>
                 <h1 className={styles.header_logo}>
-                    <a href='/'><img src="" alt="GOSSIP DOCTOR" /></a>
+                    <a className={styles.header_logo_link} href='/'><img src="" alt="GOSSIP DOCTOR" /></a>
                 </h1>
                 <nav className={styles.header_list}>
                     <ul className={styles.header_nav}>

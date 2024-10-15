@@ -1,15 +1,18 @@
 @use '../styles/reset';
+@use '/src/styles/utils/mixin' as mix;
+@use '/src/styles/utils/variable' as var;
 
 body {
     font-size: 16px;
     line-height: 1;
+    color: var.$black;
 }
-  
+
 a {
     color: #0A6AC0;
     text-decoration: none;
 }
-  
+
 li {
     list-style: none;
 }
