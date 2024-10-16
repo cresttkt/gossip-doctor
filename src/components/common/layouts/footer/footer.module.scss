@@ -1,0 +1,18 @@
+@use '/src/styles/utils/mixin' as mix;
+@use '/src/styles/utils/variable' as var;
+
+.footer {
+    padding: 23px 10px;
+    text-align: center;
+    background-color: var.$main-gray;
+
+    .footer_logo {
+        color: var.$black;
+    }
+
+    .footer_copy {
+        margin-top: 12px;
+        font-size: 13px;
+        color: var.$white;
+    }
+}

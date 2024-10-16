@@ -33,9 +33,12 @@
         right: 0;
         left: 0;
         z-index: 1000;
+        box-sizing: border-box;
         display: block;
         width: 100%;
         height: 100vh;
+        padding-right: 21px;
+        padding-left: 21px;
         color: var.$white;
         text-align: center;
         background-color: var.$main-gray;
@@ -48,7 +51,7 @@
     }
 
     .header_nav {
-        margin-top: 77px;
+        margin-top: 63px;
     }
 
     .header_navItem {
@@ -60,14 +63,78 @@
     .header_navItemLink {
         display: inline-block;
         padding: 15px;
-        font-weight: bold;
-        color: var.$black;
+        font-size: 28px;
+        color: var.$white;
     }
 
     .header_navItemLink_gossip {
         color: var.$white;
         background-color: var.$main-gray;
         border-radius: 4px;
+    }
+}
+
+.memberElement {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 77px;
+    text-align: center;
+
+    .memberElement_btn {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 58px;
+        padding: 10px;
+        font-size: 18px;
+        border: 3px solid #82796A;
+        border-radius: 5px;
+    }
+
+    .memberElement_login {
+        column-gap: 10px;
+        color: #82796A;
+        background-color: var.$white;
+
+        &::before {
+            display: block;
+            width: 26px;
+            height: 32px;
+            content: "";
+            background-image: url("/icon_key.png");
+            background-size: contain;
+        }
+    }
+
+    .memberElement_entry {
+        color: var.$white;
+        background-color: var.$main-brown;
+    }
+}
+
+.headerGossip {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 36px;
+
+    .headerGossip_btn {
+        display: block;
+        min-width: 167px;
+        padding: 19px 10px;
+        font-size: 20px;
+        color: var.$white;
+        text-align: center;
+        background-color: var.$main-brown;
+        border-radius: 5px;
+
+        &:last-child {
+            margin-top: 13px;
+        }
     }
 }
 

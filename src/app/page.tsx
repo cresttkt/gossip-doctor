@@ -1,3 +1,4 @@
+import Footer from "@/components/common/layouts/footer/footer";
 import styles from "./top.module.scss";
 import Header from "@/components/common/layouts/header/header";
 import Image from "next/image";
@@ -44,7 +45,7 @@ export default function Home() {
         </ul>
       </div>
       <div className={styles.topSearch}>
-        <ul className={styles.topSearch_list}>
+        <ul>
           <li className={styles.topSearch_item}>
             <h3 className={styles.topSearch_title}>
               <div className={styles.topSearch_title_text}><span className={styles.topSearch_title_emphasize}>病</span>院で検索</div>
@@ -71,6 +72,95 @@ export default function Home() {
           </li>
         </ul>
       </div>
+      <div className={styles.topAppeal}>
+        <div className={styles.topAppeal_text}>
+          Gossip Doctorで<br />
+          後悔のない先生選びを！
+        </div>
+        <a className={styles.topAppeal_link} href="">
+          レポートも！口コミも！<br />
+          さっそく医師を探す
+        </a>
+      </div>
+      <div className={styles.topTrendDoctor}>
+        <h4 className={styles.topTrendDoctor_title}>話題の医師</h4>
+        {/* TODO: 配列化して表示 APIでアイテムを取得して表示 */}
+        <ul>
+          <li>
+            <a className={styles.topTrendDoctor_item} href="">
+              <div className={styles.topTrendDoctor_left}>
+                <div className={styles.topTrendDoctor_imgWrapper}>
+                  <Image className={styles.topTrendDoctor_img} src="/img_doctor01.png" alt="医師01" width={56} height={56} />
+                </div>
+                <div className={styles.topTrendDoctor_detail}>
+                  <div className={styles.topTrendDoctor_name}>T病院&nbsp;&nbsp;T医師</div>
+                  <div className={styles.star}>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={styles.star_item}></span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.topTrendDoctor_right}>
+                <div className={styles.topTrendDoctor_score}>
+                  <span className={styles.topTrendDoctor_score_emphasize}>85</span>/100
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a className={styles.topTrendDoctor_item} href="">
+              <div className={styles.topTrendDoctor_left}>
+                <div className={styles.topTrendDoctor_imgWrapper}>
+                  <Image className={styles.topTrendDoctor_img} src="/img_doctor02.png" alt="医師02" width={56} height={56} />
+                </div>
+                <div className={styles.topTrendDoctor_detail}>
+                  <div className={styles.topTrendDoctor_name}>T病院&nbsp;&nbsp;T医師</div>
+                  <div className={styles.star}>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={styles.star_item}></span>
+                    <span className={styles.star_item}></span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.topTrendDoctor_right}>
+                <div className={styles.topTrendDoctor_score}>
+                  <span className={styles.topTrendDoctor_score_emphasize}>90</span>/100
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a className={styles.topTrendDoctor_item} href="">
+              <div className={styles.topTrendDoctor_left}>
+                <div className={styles.topTrendDoctor_imgWrapper}>
+                  <Image className={styles.topTrendDoctor_img} src="/img_doctor03.png" alt="医師03" width={56} height={56} />
+                </div>
+                <div className={styles.topTrendDoctor_detail}>
+                  <div className={styles.topTrendDoctor_name}>T病院&nbsp;&nbsp;T医師</div>
+                  <div className={styles.star}>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={`${styles.star_item} ${styles.star_item__active}`}></span>
+                    <span className={styles.star_item}></span>
+                    <span className={styles.star_item}></span>
+                    <span className={styles.star_item}></span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.topTrendDoctor_right}>
+                <div className={styles.topTrendDoctor_score}>
+                  <span className={styles.topTrendDoctor_score_emphasize}>78</span>/100
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <Footer />
     </div>
   );
 }
